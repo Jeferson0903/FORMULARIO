@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 :root {
-  --primary-color-darker: rgba(64, 113, 134, 0.823);
+  --primary-color-darker: rgba(34, 101, 85, 0.823);
 }
 
 * {
@@ -28,7 +28,7 @@ header{
  }
 .font{
  font-family: serif;
- color: rgb(83, 177, 78);
+ color: rgb(137, 177, 168);
  }
 
 .container {
@@ -40,6 +40,7 @@ header{
   border-radius: 10px;
 }
 h1{
+    font-weight: 500;
     font-family: serif;
     display: flex;
     align-items: center;
@@ -63,9 +64,9 @@ form input {
 form button {
   border: none;
   background: linear-gradient(to right, rgb(178, 219, 219), rgb(49, 123, 120));
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
+  color: rgb(65, 81, 78);
+  font-size: 22px;
+  font-weight: 500;
   height: 50px;
   cursor: pointer;
   margin-top: 30px;

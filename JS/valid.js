@@ -102,3 +102,11 @@ class ValidateForm {
 }
 
 const validate = new ValidateForm()
+
+function gerarPdf()
+{
+    var doc = new jsPDF();
+
+doc.fromHTML('<h1>FORMULÁRIO EM PDF</h1>');
+doc.save('arquivo.pdf');
+}

@@ -12,7 +12,7 @@
 <body>
     <header>
         <div>
-            <h1 class="font">FORMULÁRIO</h1>
+            <h1 class="font">FORMULÁRIO EM PDF</h1>
         </div>
     </header>
 
@@ -32,10 +32,11 @@
             <input type="password" class="senha validar">
             <label>Repetir Senha</label>
             <input type="password" class="repetir-senha validar">
-            <button type="submit">Enviar</button>
+            <button onclick="gerarPdf()">Gerar PDF</button>
         </form>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script src="./JS/valid.js"></script>
     <script src="./JS/validateCPF.js"></script>
 </body>
