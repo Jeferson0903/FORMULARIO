@@ -103,10 +103,18 @@ class ValidateForm {
 
 const validate = new ValidateForm()
 
-function gerarPdf()
-{
-    var doc = new jsPDF();
+const gerarPDF = () => {
+    let nome = document.querySelector(".nome");
+    let sobrenome = document.querySelector(".sobrenome");
+    let cpf = document.querySelector(".cpf");
+    let usuario = document.querySelector(".usuario");
 
-doc.fromHTML('<h1>FORMULÁRIO EM PDF</h1>');
-doc.save('formulario.pdf');
+    var pdf = new jsPDF();
+    pdf.text('FORMULÁRIO EM PDF', 70, 10);
+    pdf.text("Nome: " + nome.value, 10, 30);
+    pdf.text(`Sobrenome: ${sobrenome.value}`, 10, 40);
+    pdf.text(`Cpf: ${cpf.value}`, 10, 50);
+    pdf.text(`Usuário: ${usuario.value}`, 10, 60);
+    pdf.save("formulario.pdf");
 }
+ 
